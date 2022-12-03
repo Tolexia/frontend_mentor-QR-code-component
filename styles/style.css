@@ -1,6 +1,23 @@
 @font-face {
     font-family: outfit;
-    src: url('/fonts/Outfit-Regular.ttf');
+    src: url('../fonts/Outfit-Regular.ttf');
+  }
+  #screen-shader {
+    transition: opacity 0.1s ease 0s;
+    z-index: 2147483647;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    background: #939393 !important;
+    pointer-events: none;
+    position: fixed;
+    top: -10%;
+    right: -10%;
+    width: 120%;
+    height: 120%;
+    opacity: 0.6000;
+    mix-blend-mode: multiply;
+    display: block;
   }
   body {
     padding:0;
@@ -14,7 +31,9 @@
     position: fixed;
     bottom: 0;
   }
-  .attribution a { color: hsl(228, 45%, 44%); }
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+    }
   .container {
     background-color: hsl(212, 45%, 89%);
     height:100vh;
